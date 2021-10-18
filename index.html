@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Calculadora Grafica</title>
+  </head>
+  <body>
+    <h1>Calculadora Grafica</h1>
+    <div class="table">
+      <table>
+        <tr>
+          <th>#</th>
+          <th>
+            <input placeholder="Nombre del Eje X" id='ejeX'>
+          </th>
+          <th>
+            <input placeholder="Nombre del Eje Y" id='ejeY'>
+          </th>
+        </tr>
+        <tr>
+          <td>Dato 1</td>
+          <td>
+            <input placeholder="Valor" id='data1X'>
+          </td>
+          <td>
+            <input placeholder="Valor" type="number" id="data1Y">
+          </td>
+        </tr>
+        <tr>
+          <td>Dato 2</td>
+          <td>
+            <input placeholder="Valor" id='data2X'>
+          </td>
+          <td>
+            <input placeholder="Valor" type="number" id="data2Y">
+          </td>
+        </tr>
+        <tr>
+          <td>Dato 3</td>
+          <td>
+            <input placeholder="Valor" id='data3X'>
+          </td>
+          <td>
+            <input placeholder="Valor" type="number" id="data3Y">
+          </td>
+        </tr>
+        <tr>
+          <td>Dato 4</td>
+          <td>
+            <input placeholder="Valor" id='data4X'>
+          </td>
+          <td>
+            <input placeholder="Valor" type="number" id="data4Y">
+          </td>
+        </tr>
+        <tr>
+          <td>Dato 5</td>
+          <td>
+            <input placeholder="Valor" id='data5X'>
+          </td>
+          <td>
+            <input placeholder="Valor" type="number" id="data5Y">
+          </td>
+        </tr>
+      </table>
+      <button id="drawButton">Dibujar grafico</button>
+      <button id="clearDrawButton">Limpiar grafico</button>
+    </div>
+    <canvas id="canvas" width="600" height="400"> </canvas>
+    <script src="/script.js"></script>
+  </body>
+</html>
