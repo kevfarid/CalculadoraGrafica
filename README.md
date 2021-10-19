@@ -5,7 +5,7 @@
 `https://kevfarid.github.io/CalculadoraGrafica/`
 
 ## Run Dev
-- open dile index.js in browser
+- open dile index.html in browser
 
 ## Dirs
 | Dir     | Description |
