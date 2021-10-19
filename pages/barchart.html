@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/media-querys.css" />
+    <title>Bar Chart - Calculadora Grafica</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">
+        <img src="/assets/logo-2.png" alt="logo" />
+      </a>
+      <h1 class="font-size-mediun">DIAGRAMA DE BARRAS</h1>
+    </nav>
+    <section class="fullcenter-flexbox bar">
+      <section class="table">
+        <h4 class="text-center null-margin text-color-gray">Datos de la grafica</h4>
+        <p class='span text-center null-margin'>Digite los datos antes de crear la grafica</p>
+        <table>
+          <tr>
+            <th>#</th>
+            <th>
+              <input placeholder="Nombre del Eje X" id="ejeX" />
+            </th>
+            <th>
+              <input placeholder="Nombre del Eje Y" id="ejeY" />
+            </th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <input placeholder="Ejemplo: Manzanas" id="data1X" />
+            </td>
+            <td>
+              <input placeholder="Ejemplo: 300" type="number" id="data1Y" />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <input placeholder="Valor" id="data2X" />
+            </td>
+            <td>
+              <input placeholder="Valor" type="number" id="data2Y" />
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <input placeholder="Valor" id="data3X" />
+            </td>
+            <td>
+              <input placeholder="Valor" type="number" id="data3Y" />
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              <input placeholder="Valor" id="data4X" />
+            </td>
+            <td>
+              <input placeholder="Valor" type="number" id="data4Y" />
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              <input placeholder="Valor" id="data5X" />
+            </td>
+            <td>
+              <input placeholder="Valor" type="number" id="data5Y" />
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <div class="fullcenter-flexbox canvas">
+          <canvas id="canvas" width="600" height="400"></canvas>
+        </div>
+        <div class="fullcenter-flexbox">
+          <button id="drawButton" class="button-accept">Dibujar grafico</button>
+          <button id="clearDrawButton" class="button-clear">Limpiar grafico</button>
+        </div>
+      </section>
+    </section>
+    <script src="/js/barchart.js"></script>
+  </body>
+</html>

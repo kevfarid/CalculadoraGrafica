@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/media-querys.css" />
+  <title>Cartesian Plane - Calculadora Grafica</title>
+</head>
+<body>
+  <nav>
+    <a href="/index.html">
+      <img src="/assets/logo-2.png" alt="logo">
+    </a>
+    <h1 class="font-size-mediun">PLANO CARTESIANO</h1>
+  </nav>
+  <section class="fullcenter-flexbox">
+    <div class="inputs-group">
+      <div>
+        <label>Input X</label>
+        <input type="number" name="inputx" id="inputx" placeholder="El limite es 3000 unidades">
+      </div>
+      <div>
+        <label>Input X</label>
+        <input type="number" name="inputy" id="inputy" placeholder="El limite es 3000 unidades">
+      </div>
+      <div>
+        <button id="addPoint" class='btn-large button-accept'>Agregar punto</button>
+      </div>
+      <div>
+        <button id="clearPoints" class='btn-large button-clear'>Limpiar plano</button>
+      </div>
+    </div>
+  </section>
+  <section class="canvas-center">
+    <canvas id="canvas" width="600" height="600"></canvas>
+  </section>
+  <script src="/js/cartesianPlane.js"></script>
+</html>

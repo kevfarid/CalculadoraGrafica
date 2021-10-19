@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Calculadora Grafica</title>
-  </head>
-  <body>
-    <h1>Calculadora Grafica</h1>
-    <div class="table">
-      <table>
-        <tr>
-          <th>#</th>
-          <th>
-            <input placeholder="Nombre del Eje X" id='ejeX'>
-          </th>
-          <th>
-            <input placeholder="Nombre del Eje Y" id='ejeY'>
-          </th>
-        </tr>
-        <tr>
-          <td>Dato 1</td>
-          <td>
-            <input placeholder="Valor" id='data1X'>
-          </td>
-          <td>
-            <input placeholder="Valor" type="number" id="data1Y">
-          </td>
-        </tr>
-        <tr>
-          <td>Dato 2</td>
-          <td>
-            <input placeholder="Valor" id='data2X'>
-          </td>
-          <td>
-            <input placeholder="Valor" type="number" id="data2Y">
-          </td>
-        </tr>
-        <tr>
-          <td>Dato 3</td>
-          <td>
-            <input placeholder="Valor" id='data3X'>
-          </td>
-          <td>
-            <input placeholder="Valor" type="number" id="data3Y">
-          </td>
-        </tr>
-        <tr>
-          <td>Dato 4</td>
-          <td>
-            <input placeholder="Valor" id='data4X'>
-          </td>
-          <td>
-            <input placeholder="Valor" type="number" id="data4Y">
-          </td>
-        </tr>
-        <tr>
-          <td>Dato 5</td>
-          <td>
-            <input placeholder="Valor" id='data5X'>
-          </td>
-          <td>
-            <input placeholder="Valor" type="number" id="data5Y">
-          </td>
-        </tr>
-      </table>
-      <button id="drawButton">Dibujar grafico</button>
-      <button id="clearDrawButton">Limpiar grafico</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/media-querys.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>FORMA - Calculadora</title>
+</head>
+<body class="fullcenter">
+  <div class='container'>
+    <div>
+      <img src="/assets/logo-2.png" alt="formaCalculaora" class=".logo">
+      <h1 class="title">CALCULADORA GRAFICA</h1>
     </div>
-    <canvas id="canvas" width="600" height="400"> </canvas>
-    <script src="/script.js"></script>
-  </body>
+    <div>
+      <span class='span'>Seleciona lo que quieres hacer</span>
+    </div>
+    <section class='card-group'>
+      <a href="/pages/barchart.html" class="no-select">
+        <div class='card'>
+          <img src="/assets/img/grahp.png" alt="grahp">
+          <h2>Diagrama de Barras</h2>
+        </div>
+      </a>
+      <a href="/pages/cartesianPlane.html" class="no-select">
+        <div class='card'>
+          <img src="/assets/img/plane.png" alt="plane">
+          <h2>Plano Carteciano</h2>
+        </div>
+      </a>
+    </section>
+  </div>
+</body>
 </html>

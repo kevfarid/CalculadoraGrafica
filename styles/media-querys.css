@@ -1,0 +1,49 @@
+@media (max-width: 1018px) {
+  .fullcenter-flexbox {
+    flex-direction: column !important;
+  }
+
+  .inputs-group {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    width: 600px;
+  }
+
+  .bar {
+    width: 600px;
+  }
+
+  .canvas {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 482px) {
+  .canvas-center {
+    width: 600px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-group{
+    flex-wrap: wrap;
+    justify-content:center
+  }
+}
+
+@media (max-width: 642px) {
+  .card-group {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 320px
+  }
+
+  .card {
+    width: 90%
+  }
+}
